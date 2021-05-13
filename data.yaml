@@ -15,57 +15,393 @@ characters:
       Charisma: -2
     moves:
     - move: Divine Strength
+      description: "All-white eyes, sensation of a multitude of flapping wings, something taller
+        For the scene:
+        +2 Endure Injury
+        +2 Harm"
+        
     - move: Enhanced Awareness
       attribute: Soul
       description: "When you are at a location where the Illusion is weak, roll Soul. On a success you may have visions about the place and may be able to speak to animals and  entities tied to it.
 
-      (15+) You can discern clear details.
+        (15+) You can discern clear details.
 
-      (10–14) You get some basic impressions.
+        (10–14) You get some basic impressions.
 
-      (−9) The Illusion tears. The veil to an alternate dimension is lifted temporarily, and the PC could be sucked into it or something may emerge out of it into our reality. The GM makes a move."
+        (−9) The Illusion tears. The veil to an alternate dimension is lifted temporarily, and the PC could be sucked into it or something may emerge out of it into our reality. The GM makes a move."
+
     - move: Instinct
+      description: "When you Observe A Situation and act on the GMs answers, take +2 instead of +1."
+      
     - move: Manipulate the Illusion
       attribute: Soul
+      description: "You can manipulate the Illusion and use it against extradimensional beings and energies – be it defensively or offensively. If your action is in direct conflict against a being with magical abilities, you take a penalty to the roll equal to their level of magical expertise. When you Manipulate the Illusion to dispel a magical force, rebuke an entity, or close a portal, roll Soul −magic level of creature:
+        (15+) You permit the Illusion’s overwhelming force to cancel out the magic or rebuke the being.
+        (10–14) You permit the Illusion’s overwhelming force to cancel out the magic or rebuke the being, but there are unexpected complications, such as the magic or being has time to affect you first, or your exertion of force attracts unwanted attention.
+        (–9) The Illusion temporarily rejects you. You may be overwhelmed, transported elsewhere, or become the target of beings who now see you clearly. The GM makes a Move."
+        
     - move: Occult Intuition
       attribute: Intuition
+      description: "When you are in the presence of something supernatural, you can roll Intuition. For something concealed, you must purposefully spend some time with them first.
+
+        (15+) Ask the GM two questions from the list below.
+
+        (10-14) Ask the GM one question from the list below.
+
+        (-9) Ask the GM one question from the list below, but you have unknowingly opened yourself up to the target of your investigations. The GM makes a move.
+
+        Questions:
+
+        - Which higher power does this have connections to?
+        - What do I need, or need to do, to exorcise or control this being?
+        - Which dimension is this associated with?
+        - What must I do to protect myself from this?"
+      
     - move: Quick
       attribute: Reflexes
+      description: "You are impossibly fast. When you unleash your capacity for dazzling speed, roll Reflexes:
+
+        15+ – Choose 3 edges. You may save 2 for later.
+
+        10-14 – Choose 2 edges. You may save 1 for later.
+
+        9- – Choose 1 edge, but you attract unwanted complications. GM makes a move."
 
   laitapas:
     name: Pack
+    attributes: 
+      Willpower: 1
+      Reflexes: 1
+      Fortitude: 0
+      Violence: 0
+      Perception: 3
+      Soul: 0
+      Coolness: 1
+      Intuition: 2
+      Reason: 2
+      Charisma: 2
+    moves:
+      - move: CSI
+        attribute: Reason 
+        description: Investigating a crime scene
+      
+      - move: Interrogator
+        description: When reading a person and mention a name, person, or object, you may always ask “Are you lying?” as extra question
+      
+      - move: Read a Crowd
+        attribute: Perception
+        description: When moving through a small crowd to gather information
+      
+      - move: Fast Talk
+        attribute: Coolness
+        description: When you talk to an NPC to get their attention 
+      
+      - move: Billionaire
+        attribute: Charisma
+        description: When someone has an intimate moment with your money
+      
+      - move: Initiate
+        description: Amateur who recently started experimenting with magic
+      
+      - move: Dark Aura of Madness
+        attribute: Soul
+        description: Let your aura touch another
+      
+      - move: Talisman (Tii of The Eternal City)
+        attribute: Soul
+        description: Guide in the Realms of Madness
+      
+      - move: Perform a Ritual
+        attribute: Soul
+        description: Always requires a sacrifice
     
   kukka:
     name: Bellona
+    attributes: 
+      Willpower: 3
+      Reflexes: 1
+      Fortitude: 0
+      Violence: 5
+      Perception: 0
+      Soul: 3
+      Coolness: 4
+      Intuition: 0
+      Reason: 1
+      Charisma: 1
+    moves:
+      - move: Enhanced Awareness
+        attribute: Soul
+ 
+      - move: Field Agent
+        attribute: Violence
+ 
+      - move: Magical Intuition
+        attribute: Soul
+ 
+       - move: Improviser
+        attribute: Coolness
+ 
+       - move: Initiate
+ 
+       - move: Journeyman
+ 
+       - move: Extra-Dimensional Hideout
+        
+       - move: Perform a Ritual
+        attribute: Soul 
     
   yvaehhhh:
     name: Sagan
+    attributes: 
+      Willpower: 2
+      Reflexes: 2
+      Fortitude: 0
+      Violence: -1
+      Perception: 3
+      Soul: 4
+      Coolness: 2
+      Intuition: 1
+      Reason: 2
+      Charisma: 0
+    moves:
+      - move: Dark Vision
+        attribute: Perception
+        
+      - move: Immunity
+        
+      - move: Invulnerability
+        
+      - move: Eternal Hunger
+        attribute: Coolness
+        
+      - move: Hunting Instincts (artists)
+        attribute: Willpower
+        
+      - move: Enhanced Awareness
+        attribute: Soul
+        
+      - move: Crafty
+        attribute: Intuition
+        
+      - move: Dreamer
+        attribute: Soul
+        
+      - move: Exorcist
+        attribute: Soul
+        
+      - move: Access the Dark Net
+        attribute: Perception
+        
+      - move: Stubborn
+        attribute: Soul
+        
+      - move: Prepared
+        attribute: Reason
     
   tube:
     name: Mary
+    attributes: 
+      Willpower: 2
+      Reflexes: 1
+      Fortitude: 0
+      Violence: -2
+      Perception: 0
+      Soul: 3
+      Coolness: -1
+      Intuition: 2
+      Reason: 1
+      Charisma: 4
+    moves:
+      - move: Bewitching
+      - move: Magnetic Attraction
+      - move: Manhunter
+      - move: Sixth Sense
+      - move: Summoner
+      - move: Ethereal
+      - move: Commanding Voice
     
 Basic moves:
   - move: Act Under Pressure
     attribute: Coolness
     description: "When you do something risky, under time pressure, or try to avoid danger, the GM will explain what the consequence of failure is and you roll Coolness:
-    
-    (15+) You do it.
 
-    (10–14) You do it, but hesitate, are delayed, or must deal with a complication – the GM reveals an unexpected outcome, a high price, or a difficult choice.
+      (15+) You do it.
 
-    (−9) There are consequences, you make a mistake, or you’re exposed to the danger. The GM makes a hard or soft move."
-  
+      (10–14) You do it, but hesitate, are delayed, or must deal with a complication – the GM reveals an unexpected outcome, a high price, or a difficult choice.
+
+      (−9) There are consequences, you make a mistake, or you’re exposed to the danger. The GM makes a hard or soft move."
+
   - move: Avoid Harm
     attribute: Reflexes
     description: "When you dodge, parry, or block harm, roll Reflexes:
 
-    (15+) You emerge completely unharmed.
+      (15+) You emerge completely unharmed.
 
-    (10–14) You avoid the worst of it, but the GM decides if you end up in a bad spot, lose something, or partially sustain harm.
+      (10–14) You avoid the worst of it, but the GM decides if you end up in a bad spot, lose something, or partially sustain harm.
 
-    (−9) You were too slow to react or you made a bad judgment call. Perhaps you didn’t avoid any harm at all, or you ended up in an even worse spot than before. The GM makes a hard or soft move."
+      (−9) You were too slow to react or you made a bad judgment call. Perhaps you didn’t avoid any harm at all, or you ended up in an even worse spot than before. The GM makes a hard or soft move."
 
-  - move: 
-    attribute: 
-    description: 
+  - move: Endure Injury
+    attribute: Fortitude
+    description: "When enduring injury roll Fortitude −Harm +Armor.
 
+      (15+) You ride out the pain and keep going.
+
+      (10–14) You are still standing but the GM picks one:
+
+      - The injury throws you off balance
+      - You lose something.
+      - You receive a serious wound.
+
+      (−9) The injury is overwhelming. You choose if you:
+
+      - Are knocked out (the GM may also choose to give you a serious wound).
+      - Receive a critical wound, but may continue to act (if you already have a critical wound you may not choose this option again).
+      - Die."
+
+  - move: Engage In Combat
+    attribute: Violence
+    description: "When you engage an able opponent in combat, explain how and roll Violence.
+
+      (15+) You inflict damage to your opponent and avoid counterattacks.
+
+      (10–14) You inflict damage, but at a cost. The GM chooses one:
+
+      - You’re subjected to a counterattack.
+      - You do less damage than intended.
+      - You lose something important.
+      - You expend all your ammo.
+      - You’re beset by a new threat.
+      - You’ll be in trouble later on.
+
+      (−9) Your attack didn’t go as anticipated. You might be subjected to bad luck, miss your target, or pay a high price for your assault. The GM makes a hard or soft move."
+
+  - move: Help or Hinder
+    description: "When you help or hinder another player character’s move, explain how before their roll, and roll with the same attribute as the other player is rolling.
+
+      (15+) You may modify the subsequent roll by +2/−2.
+
+      (10–14) You may modify the subsequent roll by +1/−1.
+
+      (−9) Your interference has unintended consequences. The GM makes a hard or soft move.
+
+      With the GM’s assent a player may make a case for a retroactive assist or hindrance after a roll is made, but in stressful situations this often results in a hard choice between two possible actions."
+
+  - move: Influence Other
+    attribute: Charisma
+    description: "When you influence an NPC through negotiation, argument, or from a position of power roll Charisma:
+
+      (15+) She does what you ask
+
+      (10–14) She does what you ask, but the GM chooses one:
+
+      - she demands better compensation
+      - a complication will arise at a future time
+      - she gives in for the moment, but will change her mind and regret it later
+
+      (−9) Your attempt has unintended repercussions. The GM makes a hard or soft move.
+
+      When you influence a player character roll Charisma:
+
+      (15+) Both:
+
+      (10–14) Choose one:
+
+      - she’s motivated to do what you ask, and gets +1 for her next roll if she does it
+      - she’s worried what might happen if she doesn’t do what you ask, and gets −1 Stability if she doesn’t do it
+
+      (−9) The character gets +1 on her next roll against you. The GM makes a hard or soft move.
+
+      ***No matter the outcome it is always the player character’s option whether to do as you ask or not.***"
+
+  - move: Investigate
+    attribute: Reason
+    description: "When you investigate something roll Reason. On a success you uncover all direct leads and may ask questions to get additional information.
+
+      (15+) Ask 2 questions.
+
+      (10–14) Ask 1 question, but the information comes with a cost determined by the GM: you need someone or something to get the answer, you expose yourself to danger, or you must expend time or resources.
+
+      (−9) You may ask one question anyway but you expose yourself to unexpected dangers or costs. The GM makes a hard or soft move.
+
+      Questions:
+
+      - How can I find out more about what I’m investigating?
+      - What is my gut feel about what I’m investigating?
+      - Is there anything weird about what I’m investigating?"
+
+  - move: Keep It Together
+    attribute: Willpower
+    description: "When you exercise self-control to keep from succumbing to stress, traumatic experiences, psychic influence, or supernatural forces, roll Willpower:
+
+      (15+) You grit your teeth and stay the course without undue influence.
+
+      (10–14) The effort to resist instills a condition which remains with you until you have had time to recuperate. Choose one:
+
+      - You become angry (−1 Stability)
+      - You become sad (−1 Stability)
+      - You become scared (−1 Stability)
+      - You become guilt-ridden (−1 Stability)
+      - You become obsessed (+1 Relation to whatever caused the condition)
+      - You become distracted (−2 in situations where the condition will limit you)
+      - You will be haunted by the experience at a later time
+      - You get −1 in situations where this condition would be a hindrance to you.
+
+      (−9) The strain is too much for your mind to handle. The GM chooses your reaction: cower powerless in the threat’s presence, panic with no control of your actions, suffer emotional trauma (−2 Stability), or suffer life changing trauma (−4 Stability)."
+
+  - move: Observe A Situation
+    attribute: Perception
+    description: "When you observe a situation roll Perception. On a success you may ask the GM questions about the situation. When you act on the answers take +1 to your roll.
+
+      (15+) Ask 2 questions.
+
+      (10–14) Ask 1 question.
+
+      (−9) you get to ask a question anyway but you attract unwanted attention or expose yourself to danger. The GM makes a hard or soft move.
+
+      Questions:
+
+      - What is my best way through this?
+      - What here poses the biggest threat?
+      - What can I use to my advantage?
+      - What should I be on the lookout for?
+      - What is being hidden from me?
+      - What seems strange about this?"
+
+  - move: Relation Moves
+    description: "Applicable to Relations at strength 1 (Meaningful) or 2 (Vital) only.
+
+      *Wish No Harm*: If you intend on harming or killing your Relation – whether directly or indirectly – you must make a Keep It Together move with the influence being an unwillingness to cause injury. In case of success with complication (10–14), in addition to the normal outcome you also get a −Relation modifier to your damage-inflicting move. In case of failure (−9), in addition to the normal outcome you cannot bring yourself to harm your Relation.
+
+      *Regain Stability*: In a scene where you experience closeness, assurance, and affirmation from a Relation, your Stability is improved a number of steps equal to the strength of the Relation value.
+
+      *Lose Stability*: If a relation of yours is seriously injured or dies, your Stability is decreased a number of steps equal to the strength of the Relation value."
+
+  - move: Read A Person
+    attribute: Intuition
+    description: "When you read a person, roll [Intuition: +1](https://www.notion.so/Intuition-1-0af531b215fd45d9bb14b86f26063639). On a success, you can ask the GM/player questions about their character any time during this scene, while in conversation with their character:
+      (15+) You may ask two questions.
+      (10–14) You may ask one question.
+      (–9) You accidentally reveal your own intentions to the person you’re trying to read. Tell the GM/player what these intentions are. The GM makes a Move.
+
+      Questions:
+      ◊ Are you lying?
+      ◊ How do you feel right now?
+      ◊ What are you about to do?
+      ◊ What do you wish I would do?
+      ◊ How could I get you to [...]?"
+
+  - move: See Through The Illusion
+    attribute: Soul
+    description: "When you suffer shock, injuries, or distort your perception through drugs or rituals roll [Soul: +3](https://www.notion.so/Soul-3-9bfc28280e544c748d3f19da31d7ef8e) to see through the Illusion.
+
+      (15+) You perceive things as they truly are.
+
+      (10–14 ) You see Reality, but you also affect the Illusion.
+
+      The GM chooses one:
+
+      - Something senses you
+      - The Illusions tears
+
+      (−9) The GM explains what you see and makes a hard or soft move."
