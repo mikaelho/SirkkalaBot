@@ -1,0 +1,66 @@
+characters:
+
+  Mikael:
+    name: Dancy
+    attributes:
+      Willpower: +3
+      Reflexes: +1
+      Fortitude: 0
+      Violence: +5
+      Perception: +3
+      Soul: +3
+      Coolness: +1
+      Intuition: +1
+      Reason: -1
+      Charisma: -2
+    moves:
+    - move: Divine Strength
+    - move: Enhanced Awareness
+      attribute: Soul
+      description: "When you are at a location where the Illusion is weak, roll Soul. On a success you may have visions about the place and may be able to speak to animals and  entities tied to it.
+
+      (15+) You can discern clear details.
+
+      (10–14) You get some basic impressions.
+
+      (−9) The Illusion tears. The veil to an alternate dimension is lifted temporarily, and the PC could be sucked into it or something may emerge out of it into our reality. The GM makes a move."
+    - move: Instinct
+    - move: Manipulate the Illusion
+      attribute: Soul
+    - move: Occult Intuition
+      attribute: Intuition
+    - move: Quick
+      attribute: Reflexes
+
+  laitapas:
+    name: Pack
+    
+  kukka:
+    name: Bellona
+    
+  yvaehhhh:
+    name: Sagan
+    
+  tube:
+    name: Mary
+    
+Basic moves:
+  - move: Act Under Pressure
+    attribute: Coolness
+    description: "When you do something risky, under time pressure, or try to avoid danger, the GM will explain what the consequence of failure is and you roll Coolness:
+    
+    (15+) You do it.
+
+    (10–14) You do it, but hesitate, are delayed, or must deal with a complication – the GM reveals an unexpected outcome, a high price, or a difficult choice.
+
+    (−9) There are consequences, you make a mistake, or you’re exposed to the danger. The GM makes a hard or soft move."
+  
+  - move: Avoid Harm
+    attribute: Reflexes
+    description: "When you dodge, parry, or block harm, roll Reflexes:
+
+    (15+) You emerge completely unharmed.
+
+    (10–14) You avoid the worst of it, but the GM decides if you end up in a bad spot, lose something, or partially sustain harm.
+
+    (−9) You were too slow to react or you made a bad judgment call. Perhaps you didn’t avoid any harm at all, or you ended up in an even worse spot than before. The GM makes a hard or soft move."
