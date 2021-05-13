@@ -1,0 +1,2 @@
+# SirkkalaBot
+Bot for Sirkkala
