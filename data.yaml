@@ -80,41 +80,42 @@ characters:
       Intuition: 2
       Reason: 2
       Charisma: 2
+      
     moves:
-      - move: CSI
-        attribute: Reason 
-        description: Investigating a crime scene
-      
-      - move: Interrogator
-        description: When reading a person and mention a name, person, or object, you may always ask “Are you lying?” as extra question
-      
-      - move: Read a Crowd
-        attribute: Perception
-        description: When moving through a small crowd to gather information
-      
-      - move: Fast Talk
-        attribute: Coolness
-        description: When you talk to an NPC to get their attention 
-      
-      - move: Billionaire
-        attribute: Charisma
-        description: When someone has an intimate moment with your money
-      
-      - move: Initiate
-        description: Amateur who recently started experimenting with magic
-      
-      - move: Dark Aura of Madness
-        attribute: Soul
-        description: Let your aura touch another
-      
-      - move: Talisman (Tii of The Eternal City)
-        attribute: Soul
-        description: Guide in the Realms of Madness
-      
-      - move: Perform a Ritual
-        attribute: Soul
-        description: Always requires a sacrifice
-    
+    - move: CSI
+      attribute: Reason 
+      description: Investigating a crime scene
+
+    - move: Interrogator
+      description: When reading a person and mention a name, person, or object, you may always ask “Are you lying?” as extra question
+
+    - move: Read a Crowd
+      attribute: Perception
+      description: When moving through a small crowd to gather information
+
+    - move: Fast Talk
+      attribute: Coolness
+      description: When you talk to an NPC to get their attention 
+
+    - move: Billionaire
+      attribute: Charisma
+      description: When someone has an intimate moment with your money
+
+    - move: Initiate
+      description: Amateur who recently started experimenting with magic
+
+    - move: Dark Aura of Madness
+      attribute: Soul
+      description: Let your aura touch another
+
+    - move: Talisman (Tii of The Eternal City)
+      attribute: Soul
+      description: Guide in the Realms of Madness
+
+    - move: Perform a Ritual
+      attribute: Soul
+      description: Always requires a sacrifice
+
   kukka:
     name: Bellona
     attributes: 
@@ -128,27 +129,28 @@ characters:
       Intuition: 0
       Reason: 1
       Charisma: 1
+      
     moves:
-      - move: Enhanced Awareness
-        attribute: Soul
- 
-      - move: Field Agent
-        attribute: Violence
- 
-      - move: Magical Intuition
-        attribute: Soul
- 
-       - move: Improviser
-        attribute: Coolness
- 
-       - move: Initiate
- 
-       - move: Journeyman
- 
-       - move: Extra-Dimensional Hideout
-        
-       - move: Perform a Ritual
-        attribute: Soul 
+    - move: Enhanced Awareness
+      attribute: Soul
+
+    - move: Field Agent
+      attribute: Violence
+
+    - move: Magical Intuition
+      attribute: Soul
+
+    - move: Improviser
+      attribute: Coolness
+
+    - move: Initiate
+
+    - move: Journeyman
+
+    - move: Extra-Dimensional Hideout
+
+    - move: Perform a Ritual
+      attribute: Soul 
     
   yvaehhhh:
     name: Sagan
@@ -163,40 +165,41 @@ characters:
       Intuition: 1
       Reason: 2
       Charisma: 0
+      
     moves:
-      - move: Dark Vision
-        attribute: Perception
-        
-      - move: Immunity
-        
-      - move: Invulnerability
-        
-      - move: Eternal Hunger
-        attribute: Coolness
-        
-      - move: Hunting Instincts (artists)
-        attribute: Willpower
-        
-      - move: Enhanced Awareness
-        attribute: Soul
-        
-      - move: Crafty
-        attribute: Intuition
-        
-      - move: Dreamer
-        attribute: Soul
-        
-      - move: Exorcist
-        attribute: Soul
-        
-      - move: Access the Dark Net
-        attribute: Perception
-        
-      - move: Stubborn
-        attribute: Soul
-        
-      - move: Prepared
-        attribute: Reason
+    - move: Dark Vision
+      attribute: Perception
+
+    - move: Immunity
+
+    - move: Invulnerability
+
+    - move: Eternal Hunger
+      attribute: Coolness
+
+    - move: Hunting Instincts (artists)
+      attribute: Willpower
+
+    - move: Enhanced Awareness
+      attribute: Soul
+
+    - move: Crafty
+      attribute: Intuition
+
+    - move: Dreamer
+      attribute: Soul
+
+    - move: Exorcist
+      attribute: Soul
+
+    - move: Access the Dark Net
+      attribute: Perception
+
+    - move: Stubborn
+      attribute: Soul
+
+    - move: Prepared
+      attribute: Reason
     
   tube:
     name: Mary
@@ -212,13 +215,13 @@ characters:
       Reason: 1
       Charisma: 4
     moves:
-      - move: Bewitching
-      - move: Magnetic Attraction
-      - move: Manhunter
-      - move: Sixth Sense
-      - move: Summoner
-      - move: Ethereal
-      - move: Commanding Voice
+    - move: Bewitching
+    - move: Magnetic Attraction
+    - move: Manhunter
+    - move: Sixth Sense
+    - move: Summoner
+    - move: Ethereal
+    - move: Commanding Voice
     
 Basic moves:
   - move: Act Under Pressure
