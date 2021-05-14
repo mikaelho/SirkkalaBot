@@ -126,7 +126,7 @@ class Responder:
         return f'<details class="p-4"><summary>{title}</summary><div class="p-4">{content}</div></details>'
     
     def throw_buttons_html(self, move, character):
-        return ' '.join([
+        return ' | ' + ' | '.join([
             f'<button name="button">{"+" if modifier > 0 else ""}{modifier}</button>'
             for modifier in range(-5, 6)
         ])
