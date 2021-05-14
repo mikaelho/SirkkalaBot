@@ -97,7 +97,7 @@ class Responder:
         title = character["name"]
         attributes_html = self.html_attributes(character)
         moves = character.get('moves')
-        moves_html = moves and self.html_moves(moves) or ''
+        moves_html = moves and self.html_moves(moves, character) or ''
         content = f'{attributes_html}{moves_html}'
         return f'<details class="p-4 m-4 bg-white"><summary>{title}</summary>{content}</details>'
 
@@ -114,13 +114,19 @@ class Responder:
     def html_basic_moves(self):
         return self.html_moves(self.basic_moves)
 
-    def html_moves(self, moves):
-        return ''.join([self.html_move(move) for move in moves])
+    def html_moves(self, moves, character):
+        return ''.join([self.html_move(move, character) for move in moves])
 
-    def html_move(self, move):
+    def html_move(self, move, character):
         attribute = move.get("attribute")
         attribute_html = attribute and f' ({attribute})' or ''
-        title = f'{move["move"]}{attribute_html}'
+        throw_html = attribute and self.throw_buttons_html(move, character) or ''
+        title = f'{move["move"]}{attribute_html}{throw_html}'
         content = move.get("description", '').replace('\n', '<br/>')
         return f'<details class="p-4"><summary>{title}</summary><div class="p-4">{content}</div></details>'
     
+    def throw_buttons_html(self, move, character):
+        return ''.join([
+            f'<button name="button">{modifier}</button>'
+            for modifier in range(-5, 6)
+        ])
