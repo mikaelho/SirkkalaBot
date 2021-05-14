@@ -120,8 +120,8 @@ class Responder:
     def html_move(self, move, character):
         attribute = move.get("attribute")
         attribute_html = attribute and f' ({attribute})' or ''
-        throw_html = attribute and self.throw_buttons_html(move, character) or ''
-        title = f'{move["move"]}{attribute_html}{throw_html}'
+        #throw_html = attribute and self.throw_buttons_html(move, character) or ''
+        title = f'{move["move"]}{attribute_html}'
         content = move.get("description", '').replace('\n', '<br/>')
         return f'<details class="p-4"><summary>{title}</summary><div class="p-4">{content}</div></details>'
     
