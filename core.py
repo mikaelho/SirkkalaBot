@@ -87,7 +87,7 @@ class Responder:
 
     @staticmethod
     def throw_one():
-        return randint(1, 12)
+        return randint(1, 10)
 
     def get_html(self):
         return f'''
@@ -132,14 +132,14 @@ class Responder:
         modifier = attribute and character['attributes'].get(attribute) or 0
         attribute_html = attribute and f' <span style="font-weight: 300">({attribute}: {modifier:+})</span>' or ''
         throw_html = attribute and self.throw_buttons_html(move, character) or ''
-        title = f'<span style="color: blue;">{move["move"]}{attribute_html} {throw_html}</span> '
+        title = f'<span style="color: blue;"><b>{move["move"]}</b>{attribute_html} {throw_html}</span> '
         content = move.get("description", '').replace('\n', '<br/>')
         return f'<details class="p-4"><summary>{title}</summary><div class="p-4" style="font-weight: 300">{content}</div></details>'
     
     def throw_buttons_html(self, move, character):
         this_id = self.make_id(character, move)
         return f'<span id="{this_id}">' + ' '.join([
-            f'<button hx-get="{self.make_url(character, move, modifier)}" hx-trigger="click" hx-target="#{this_id}" style="background-color: rgba(37, 99, 235); color: white; padding: -8px 8px; line-height: 1em; border-radius: 4px;">&nbsp;{modifier:+}&nbsp;</button>'
+            f'<button hx-get="{self.make_url(character, move, modifier)}" hx-trigger="click" hx-target="#{this_id}" style="background-color: rgba(239, 246, 255); color: rgba(30, 64, 175); padding: -4px 16px; line-height: 1.2em; border-radius: 4px;">&nbsp;&nbsp;&nbsp;{modifier:+}&nbsp;&nbsp;&nbsp;</button>'
             for modifier in range(-5, 6)
         ]) + '</span>'
 
