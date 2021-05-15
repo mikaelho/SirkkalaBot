@@ -18,6 +18,7 @@ class Responder:
         self.characters = data['characters']
         self.basic_moves = data['Basic moves']
         self.all_moves_by_user = {}
+
         for username, values in self.characters.items():
             character_moves = values.get('moves', [])
             character_moves.extend(self.basic_moves)
@@ -52,6 +53,12 @@ class Responder:
             print('Something wrong with action:', action.__dict__)
             return 'Hämmennys'
     
+    def get_username_by_character_name(self, character_name):
+        for username, character in self.characters.items():
+            if character['name'].lower() == character_name.lower():
+                return username
+        return None
+
     def throw(self, character, move, situation_modifier):        
         first_throw = self.throw_one()
         second_throw = self.throw_one()
@@ -84,7 +91,7 @@ class Responder:
 
     def get_html(self):
         return f'''
-        <body class="text-sm text-gray-900 bg-gradient-to-r from-green-400 to-blue-500">
+        <body class="bg-gradient-to-r from-green-400 to-blue-500">
         {self.html_characters()}
         </body>'''
 
@@ -105,11 +112,14 @@ class Responder:
         attributes = character.get('attributes')
         if not attributes:
             return ''
-        attribute_html = '&nbsp;&nbsp;&nbsp;'.join([f'⊛ {name}: {value}' for name, value in list(attributes.items())[:3]])
+        attribute_html = self.html_attribute_set(list(attributes.items())[:3])
         attribute_html += '<br/>'
-        attribute_html += '&nbsp;&nbsp;&nbsp;'.join([f'⊛ {name}: {value}' for name, value in list(attributes.items())[3:]])
+        attribute_html += self.html_attribute_set(list(attributes.items())[3:])
         attribute_html = f'<div class="p-4">{attribute_html}</div>'
         return attribute_html
+
+    def html_attribute_set(self, attributes):
+        return '&nbsp;&nbsp;&nbsp;'.join([f'<span style="color: blue; font-weight: 300;">{name}:</span> {value}' for name, value in attributes])
 
     def html_basic_moves(self):
         return self.html_moves(self.basic_moves)
@@ -119,14 +129,35 @@ class Responder:
 
     def html_move(self, move, character):
         attribute = move.get("attribute")
-        attribute_html = attribute and f' ({attribute})' or ''
-        #throw_html = attribute and self.throw_buttons_html(move, character) or ''
-        title = f'{move["move"]}{attribute_html}'
+        modifier = attribute and character['attributes'].get(attribute) or 0
+        attribute_html = attribute and f' <span style="font-weight: 300">({attribute}: {modifier:+})</span>' or ''
+        throw_html = attribute and self.throw_buttons_html(move, character) or ''
+        title = f'<span style="color: blue;">{move["move"]}{attribute_html} {throw_html}</span> '
         content = move.get("description", '').replace('\n', '<br/>')
-        return f'<details class="p-4"><summary>{title}</summary><div class="p-4">{content}</div></details>'
+        return f'<details class="p-4"><summary>{title}</summary><div class="p-4" style="font-weight: 300">{content}</div></details>'
     
     def throw_buttons_html(self, move, character):
-        return ' | ' + ' | '.join([
-            f'<button name="button">{"+" if modifier > 0 else ""}{modifier}</button>'
+        this_id = self.make_id(character, move)
+        return f'<span id="{this_id}">' + ' '.join([
+            f'<button hx-get="{self.make_url(character, move, modifier)}" hx-trigger="click" hx-target="#{this_id}" style="background-color: rgba(37, 99, 235); color: white; padding: -8px 8px; line-height: 1em; border-radius: 4px;">&nbsp;{modifier:+}&nbsp;</button>'
             for modifier in range(-5, 6)
-        ])
+        ]) + '</span>'
+
+    def buttons(self, character, move_name):
+        character = self.characters[self.get_username_by_character_name(character)]
+        for move in character['moves']:
+            if move['move'].lower() == move_name:
+                return self.throw_buttons_html(move, character)
+        return "Big problem"
+
+    @staticmethod
+    def make_id(character, move):
+        move_id = f'{character["name"]}-{move["move"]}'.lower()
+        move_id = '-'.join(move_id.split())
+        return move_id
+
+    @staticmethod
+    def make_url(character, move, modifier):
+        move_url = f'/throw/{character["name"]}/{move["move"]}/{modifier}'.lower()
+        move_url = '-'.join(move_url.split())
+        return move_url

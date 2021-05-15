@@ -16,8 +16,11 @@ characters:
     moves:
     - move: Divine Strength
       description: "All-white eyes, sensation of a multitude of flapping wings, something taller
+
         For the scene:
+
         +2 Endure Injury
+
         +2 Harm"
         
     - move: Enhanced Awareness
@@ -35,9 +38,14 @@ characters:
       
     - move: Manipulate the Illusion
       attribute: Soul
-      description: "You can manipulate the Illusion and use it against extradimensional beings and energies – be it defensively or offensively. If your action is in direct conflict against a being with magical abilities, you take a penalty to the roll equal to their level of magical expertise. When you Manipulate the Illusion to dispel a magical force, rebuke an entity, or close a portal, roll Soul −magic level of creature:
+      description: "You can manipulate the Illusion and use it against extradimensional beings and energies – be it defensively or offensively. If your action is in direct conflict against a being with magical abilities, you take a penalty to the roll equal to their level of magical expertise.
+      
+      When you Manipulate the Illusion to dispel a magical force, rebuke an entity, or close a portal, roll Soul −magic level of creature:
+
         (15+) You permit the Illusion’s overwhelming force to cancel out the magic or rebuke the being.
+
         (10–14) You permit the Illusion’s overwhelming force to cancel out the magic or rebuke the being, but there are unexpected complications, such as the magic or being has time to affect you first, or your exertion of force attracts unwanted attention.
+
         (–9) The Illusion temporarily rejects you. You may be overwhelmed, transported elsewhere, or become the target of beings who now see you clearly. The GM makes a Move."
         
     - move: Occult Intuition
@@ -53,8 +61,11 @@ characters:
         Questions:
 
         - Which higher power does this have connections to?
+
         - What do I need, or need to do, to exorcise or control this being?
+
         - Which dimension is this associated with?
+
         - What must I do to protect myself from this?"
       
     - move: Quick
@@ -253,13 +264,17 @@ Basic moves:
       (10–14) You are still standing but the GM picks one:
 
       - The injury throws you off balance
+
       - You lose something.
+
       - You receive a serious wound.
 
       (−9) The injury is overwhelming. You choose if you:
 
       - Are knocked out (the GM may also choose to give you a serious wound).
+
       - Receive a critical wound, but may continue to act (if you already have a critical wound you may not choose this option again).
+
       - Die."
 
   - move: Engage In Combat
@@ -271,10 +286,15 @@ Basic moves:
       (10–14) You inflict damage, but at a cost. The GM chooses one:
 
       - You’re subjected to a counterattack.
+
       - You do less damage than intended.
+
       - You lose something important.
+
       - You expend all your ammo.
+
       - You’re beset by a new threat.
+
       - You’ll be in trouble later on.
 
       (−9) Your attack didn’t go as anticipated. You might be subjected to bad luck, miss your target, or pay a high price for your assault. The GM makes a hard or soft move."
@@ -299,7 +319,9 @@ Basic moves:
       (10–14) She does what you ask, but the GM chooses one:
 
       - she demands better compensation
+
       - a complication will arise at a future time
+
       - she gives in for the moment, but will change her mind and regret it later
 
       (−9) Your attempt has unintended repercussions. The GM makes a hard or soft move.
@@ -311,6 +333,7 @@ Basic moves:
       (10–14) Choose one:
 
       - she’s motivated to do what you ask, and gets +1 for her next roll if she does it
+
       - she’s worried what might happen if she doesn’t do what you ask, and gets −1 Stability if she doesn’t do it
 
       (−9) The character gets +1 on her next roll against you. The GM makes a hard or soft move.
@@ -330,7 +353,9 @@ Basic moves:
       Questions:
 
       - How can I find out more about what I’m investigating?
+
       - What is my gut feel about what I’m investigating?
+
       - Is there anything weird about what I’m investigating?"
 
   - move: Keep It Together
@@ -342,12 +367,19 @@ Basic moves:
       (10–14) The effort to resist instills a condition which remains with you until you have had time to recuperate. Choose one:
 
       - You become angry (−1 Stability)
+
       - You become sad (−1 Stability)
+
       - You become scared (−1 Stability)
+
       - You become guilt-ridden (−1 Stability)
+
       - You become obsessed (+1 Relation to whatever caused the condition)
+
       - You become distracted (−2 in situations where the condition will limit you)
+
       - You will be haunted by the experience at a later time
+
       - You get −1 in situations where this condition would be a hindrance to you.
 
       (−9) The strain is too much for your mind to handle. The GM chooses your reaction: cower powerless in the threat’s presence, panic with no control of your actions, suffer emotional trauma (−2 Stability), or suffer life changing trauma (−4 Stability)."
@@ -365,10 +397,15 @@ Basic moves:
       Questions:
 
       - What is my best way through this?
+
       - What here poses the biggest threat?
+
       - What can I use to my advantage?
+
       - What should I be on the lookout for?
+
       - What is being hidden from me?
+
       - What seems strange about this?"
 
   - move: Relation Moves
@@ -383,15 +420,23 @@ Basic moves:
   - move: Read A Person
     attribute: Intuition
     description: "When you read a person, roll [Intuition: +1](https://www.notion.so/Intuition-1-0af531b215fd45d9bb14b86f26063639). On a success, you can ask the GM/player questions about their character any time during this scene, while in conversation with their character:
+
       (15+) You may ask two questions.
+
       (10–14) You may ask one question.
+
       (–9) You accidentally reveal your own intentions to the person you’re trying to read. Tell the GM/player what these intentions are. The GM makes a Move.
 
       Questions:
+
       ◊ Are you lying?
+
       ◊ How do you feel right now?
+
       ◊ What are you about to do?
+
       ◊ What do you wish I would do?
+
       ◊ How could I get you to [...]?"
 
   - move: See Through The Illusion
@@ -405,6 +450,7 @@ Basic moves:
       The GM chooses one:
 
       - Something senses you
+
       - The Illusions tears
 
       (−9) The GM explains what you see and makes a hard or soft move."

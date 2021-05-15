@@ -10,6 +10,7 @@ discord = "^1.0.1"
 flask = "^2.0.0"
 pytest = "^6.2.4"
 PyYAML = "^5.4.1"
+quart = "^0.15.0"
 
 [tool.poetry.dev-dependencies]
 

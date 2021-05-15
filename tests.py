@@ -64,3 +64,18 @@ def test_throws(monkeypatch, responder):
     monkeypatch.setattr(responder, 'throw_one', lambda: 4)
     assert responder(username, 'a avoid') == 'Dancy - Avoid Harm - 4 4 +1 = 9'
     assert responder(username, 'a avoid -2') == 'Dancy - Avoid Harm - 4 4 +1 -2 = 7'
+
+def test_make_id():
+    move_id = Responder.make_id(
+        {'name': 'Character'},
+        {'move': 'Move Name'},
+    )
+    assert move_id == 'character-move-name'
+    
+def  test_make_url(responder):
+    move_url = Responder.make_url(
+        {'name': 'Character'},
+        {'move': 'Move Name'},
+        +2,
+    )
+    assert move_url == '/throw/character/move-name/2'

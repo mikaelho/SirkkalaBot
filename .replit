@@ -1,2 +1,3 @@
 language = "python3"
+# run = "pytest tests.py"
 run = "python main.py"
