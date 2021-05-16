@@ -140,7 +140,7 @@ class Responder:
         this_id = self.make_id(character, move)
         return f'<span id="{this_id}">' + ' '.join([
             f'<button hx-get="{self.make_url(character, move, modifier)}" hx-trigger="click" hx-target="#{this_id}" style="background-color: rgba(239, 246, 255); color: rgba(30, 64, 175); padding: -4px 16px; line-height: 1.2em; border-radius: 4px;">&nbsp;&nbsp;&nbsp;{modifier:+}&nbsp;&nbsp;&nbsp;</button>'
-            for modifier in range(-5, 6)
+            for modifier in range(-4, 5)
         ]) + '</span>'
 
     def buttons(self, character, move_name):
