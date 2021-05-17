@@ -38,6 +38,7 @@ def test_parser():
     assert not parse('a -')
     assert parse('a').action == 'apua'
     assert parse('a Keep It Together').move == 'keep it together'
+    assert parse('a roll +2').move == 'roll'
     assert parse('a avoid -2').modifier == -2
     assert parse('a avoid + 2').modifier == 2
     assert parse('a avoid + 2').move == 'avoid'
@@ -64,6 +65,9 @@ def test_throws(monkeypatch, responder):
     monkeypatch.setattr(responder, 'throw_one', lambda: 4)
     assert responder(username, 'a avoid') == 'Dancy - Avoid Harm - 4 4 +1 = 9'
     assert responder(username, 'a avoid -2') == 'Dancy - Avoid Harm - 4 4 +1 -2 = 7'
+    assert responder(username, 'a roll') == 'Dancy - Roll - 4 4 = 8'
+    assert responder(username, 'a willpower') == 'Dancy - Willpower - 4 4 +3 = 11'
+
 
 def test_make_id():
     move_id = Responder.make_id(
@@ -71,6 +75,7 @@ def test_make_id():
         {'move': 'Move Name'},
     )
     assert move_id == 'character-move-name'
+
     
 def  test_make_url(responder):
     move_url = Responder.make_url(

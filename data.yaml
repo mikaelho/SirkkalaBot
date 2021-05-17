@@ -77,6 +77,18 @@ characters:
         10-14 – Choose 2 edges. You may save 1 for later.
 
         9- – Choose 1 edge, but you attract unwanted complications. GM makes a move."
+        
+    - move: Summoner
+      attribute: Soul
+      description: "You have the ability to summon one of your Higher Power’s servants to assist you with something. Archons are served by creatures native to Metropolis, while Death Angels are served by creatures from Inferno.
+      
+        You may summon a group of lesser creatures, such as purgatides or borderliners, or summon one more powerful being. If the summoned creature has magical abilities, you take a penalty to the roll, equal to their level of magical expertise. When you summon a servitor creature, roll +Soul −magic level of creature:
+
+        (15+) You summon the creature(s), who will obey your orders for one day.
+        
+        (10–14) You summon the creature(s), who will either obey your orders for one scene or fulfill a single order that takes longer. You do not have full control over the creature(s), who will act on their own accord and interpret your orders as they wish.
+        
+        (–9) You summon the creature(s), who are not under your power at all, but act according to their own whims."
 
   laitapas:
     name: Pack
@@ -212,7 +224,7 @@ characters:
     - move: Prepared
       attribute: Reason
     
-  tube:
+  tubelahdeoja:
     name: Mary
     attributes: 
       Willpower: 2
@@ -454,3 +466,35 @@ Basic moves:
       - The Illusions tears
 
       (−9) The GM explains what you see and makes a hard or soft move."
+
+  - move: Willpower
+    attribute: Willpower
+
+  - move: Reflexes
+    attribute: Reflexes
+
+  - move: Fortitude
+    attribute: Fortitude
+
+  - move: Violence
+    attribute: Violence
+
+  - move: Perception
+    attribute: Perception
+
+  - move: Soul
+    attribute: Soul
+
+  - move: Coolness
+    attribute: Coolness
+
+  - move: Intuition
+    attribute: Intuition
+
+  - move: Reason
+    attribute: Reason
+
+  - move: Charisma
+    attribute: Charisma
+
+  - move: Roll
