@@ -239,12 +239,136 @@ characters:
       Charisma: 4
     moves:
     - move: Bewitching
+      attribute: Charisma
+      description: "You exert a strong attractive force on people. When you use your powers to manipulate someone, roll +Charisma:
+
+(15+) Choose up to 3 options.
+
+(10–14) Choose up to 2 options.
+
+(–9) Choose 1 option, but you also make your victim
+become obsessed with you. They will be dying to meet
+you again, making every effort to do so.
+
+Options:
+
+- Make your victim like you. They take +1 Relation to
+you.
+
+- Influence your victim as if you rolled a (15+).
+
+- Make your victim desire you."
+
     - move: Magnetic Attraction
+      attribute: Soul
+      description: "Whenever you attract everyone’s attention, roll +Soul:
+
+(15+) Choose up to three options. You may save up to
+two until later in the scene.
+
+(10–14) Choose one option.
+
+(–9) Choose one option, but someone present becomes obsessed, wanting to have you, keep you, and own you for themselves. The GM makes a Move.
+
+Options:
+
+- People forget what they’re doing and can do nothing
+but stare at you.
+
+- Draw someone to you.
+
+- Get someone to do what you ask."
+
     - move: Manhunter
+      attribute: Reason
+      description: "Whenever you’re out to get information about someone, roll +Reason:
+
+(15+) Ask the GM three questions from the list below.
+
+(10–14) Ask the GM two questions from the list below.
+
+(–9) Ask the GM one question from the list below, but someone figures out you’ve been snooping around.
+
+Questions:
+
+- What is their background?
+
+- What or who do they love most of all?
+
+- Who do they surround themselves with, like, and/or trust?
+
+- Where are they located right now?
+
+- How can I best gain access to them?"
+
+
     - move: Sixth Sense
+      attribute: Soul
+      description: "You have an intuition for things, both good and bad. At the start of each game session, roll +Soul:
+
+(15+) Choose up to three options, useable any time during the session.
+
+(10–14) Choose up to two options, useable any time during the session.
+
+(–9) Your instincts will fail to trigger in a dangerous situation. The GM makes a Move at some point during the session.
+
+Options:
+
+- Act first in a threatening situation. This can include even acting prior to a surprise attack.
+
+- Sense whether someone wishes good or ill towards you.
+
+- Discover or sense a clue or lead when you’re off track."
+
+
     - move: Summoner
+      attribute: Soul
+      description: "You have the ability to summon one of your Higher Power’s servants to assist you with something. Archons are served by creatures native to Metropolis, while Death Angels are served by creatures from Inferno. You may summon a group of lesser creatures, such as purgatides or borderliners, or summon one more powerful being. If the summoned creature has magical abilities, you take a penalty to the roll, equal to their level of magical expertise. When you summon a servitor creature, roll +Soul −magic level of creature:
+
+(15+) You summon the creature(s), who will obey your orders for one day.
+
+(10–14) You summon the creature(s), who will either obey your orders for one scene or fulfill a single order that takes longer. You do not have full control over the creature(s), who will act on their own accord and interpret your orders as they wish.
+
+(–9) You summon the creature(s), who are not under your power at all, but act according to their own whims."
+
+
     - move: Ethereal
+      attribute: Soul
+      description: "You are able to transform your body into a fine, ghostly mist. When you assume your ethereal form, roll +Soul:
+
+(15+) Choose 3 Edges. You may save up to 2 until later.
+
+(10–14) Choose 2 Edges. You may save 1 until later.
+
+(–9) Choose 1 Edge but you attract spirits or other ethereal creatures. The GM makes a Move.
+
+Edges:
+
+- Ghostly movement: Move through a physical obstacle such as a person, wall, or door.
+
+- Weapons pass right through me: Completely avoid physical Harm.
+
+- Unrestrainable: Get out of a hold, bondage, or other physical objects trapping you."
+
     - move: Commanding Voice
+      attribute: Soul
+      description: "You may order people and creatures about. When you give an intelligent non-player creature an order, roll+Soul –magic level of creature:
+
+(15+) The person or creature must obey your order,
+unless doing so would cause them direct harm.
+
+(10–14) The person or creature must obey your order,
+unless doing so would expose them to danger.
+
+(–9) The person or creature acts unpredictably. The GM
+determines if they resist the order, misunderstand it,
+carry out your instructions incorrectly, becomes angered
+at you, or carries out your order, but gains a magic bond
+to you that it will exploit later.
+
+When you give a PC an order, she must Keep it
+Together. If she fails, she’s unable to resist the order."
+    
     
 Basic moves:
   - move: Act Under Pressure
@@ -498,3 +622,4 @@ Basic moves:
     attribute: Charisma
 
   - move: Roll
+    attribute: None

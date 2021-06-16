@@ -129,7 +129,7 @@ class Responder:
     def html_move(self, move, character):
         attribute = move.get("attribute")
         modifier = attribute and character['attributes'].get(attribute) or 0
-        attribute_html = attribute and f' <span style="font-weight: 300">({attribute}: {modifier:+})</span>' or ''
+        attribute_html = attribute and attribute != 'None' and f' <span style="font-weight: 300">({attribute}: {modifier:+})</span>' or ''
         throw_html = attribute and self.throw_buttons_html(move, character) or ''
         title = f'<span style="color: darkGreen;"><b>{move["move"]}</b>{attribute_html} {throw_html}</span> '
         content = move.get("description", '').replace('\n', '<br/>')
