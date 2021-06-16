@@ -12,7 +12,7 @@ from core import Responder
 
 
 responder = Responder()
-
+config = {}
 
 client = discord.Client()
 
@@ -65,7 +65,8 @@ def throw(character, move, modifier):
     return f'<span id="{this_id}" style="color: white; background-color: rgba(5, 150, 105);" hx-get="{this_url}" hx-trigger="load delay:7s" hx-swap="outerHTML">&nbsp;&nbsp;{result}&nbsp;&nbsp;</span>'
 
 async def send_to_channel(message):
-    game_channel = client.get_channel(int(os.environ['KULT_CHANNEL']))
+    game_channel = config['channel']
+    print('Send', message, 'to channel', game_channel.name)
     await game_channel.send(message)
 
 @app.route('/buttons/<character>/<move>')
@@ -85,6 +86,8 @@ run_server()
 @client.event
 async def on_ready():
     print('Logged in as', client.user.name, client.user.id)
+    config['channel'] = client.get_channel(int(os.environ['KULT_CHANNEL']))
+    print('Game channel', config['channel'].name)
 
 @client.event
 async def on_message(message):
