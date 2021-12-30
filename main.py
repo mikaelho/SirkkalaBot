@@ -94,6 +94,9 @@ async def on_message(message):
     if message.author == client.user:
         return
 
+    if message.channel.id != config['channel'].id:
+        return
+
     username = message.author.name.split('#')[0]
 
     response = responder(username, message.content)
